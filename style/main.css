@@ -37,7 +37,7 @@ section {
     right: 0;
     top: 0;
     width: 100%;
-    background: rgb(0, 60, 255);
+    background:#ee4d2d;
     z-index: 1;
     display: flex;
     justify-content: center;
