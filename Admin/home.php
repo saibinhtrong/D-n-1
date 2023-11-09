@@ -1,4 +1,14 @@
-5e58502e3f1ed0b7f0d7e7f38a63e5ff98f50561
-fjldflkjsasdbhvjdfbvkd
-helo
-dh;kflds
+<main class="app-content_admin">
+    <div class="conten_admin">
+        <h4>Welcome</h4>
+        <p>
+            Xin chào Adimn, chào mừng bạn trở lại
+        </p>
+        <div class="image_homes">
+        </div>
+    </div>
+</main>
+<main class="app-content_footer">
+    <div class="conten_admin">
+    </div>
+</main>
