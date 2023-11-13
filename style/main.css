@@ -669,7 +669,7 @@ section {
 }
 
 .trash {
-    background: blue;
+    background: #3C91E6;
     border: none;
     color: white;
     cursor: pointer;
