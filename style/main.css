@@ -661,17 +661,17 @@ section {
 }
 
 .btn-primary {
-    color: rgb(245 157 57);
-    background-color: rgb(251 226 197);
+    color: white;
+    background-color: #de0400;
     border-radius: .357rem;
     border: none;
     font-weight: 600;
 }
 
 .trash {
-    background: #f7c3c2;
+    background: #3C91E6;
     border: none;
-    color: #de0400;
+    color: white;
     cursor: pointer;
 }
 
