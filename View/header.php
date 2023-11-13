@@ -25,7 +25,7 @@
             </div> -->
         <header >
             <div class="logo">
-                <img src="image/logo-Schannel-Network-crop.png">
+                <img src="image/zyro-image.png">
             </div>
             <form action="index.php?act=product_list" method="post">
                 <div class="search">
