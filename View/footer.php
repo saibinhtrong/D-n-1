@@ -45,7 +45,7 @@
                 </a>
                 <span style="--i:0"></span>
                 <span style="--i:1"></span>
-                <span style="--i:2"></span>
+                <span style="--i:2"><a href="https://trello.com/b/osbddFxC/d%E1%BB%B1-%C3%A1n-1"></a></span>
                 <span style="--i:3"></span>
             </div>
         </div>
@@ -62,23 +62,9 @@
         }
     })
 </script>
-<!-- <script>
-    // Function hiển thị thông báo
-    function showWelcomeNotification() {
-        document.getElementById('welcomeNotification').style.display = 'block';
-        setTimeout(closeNotification, 2000);
-    }
-    // Function đóng thông báo
-    function closeNotification() {
-        document.getElementById('welcomeNotification').style.display = 'none';
-    }
-    // Gọi hàm hiển thị thông báo khi trang được tải
-    window.onload = function() {
-        showWelcomeNotification();
-    };
-</script> -->
 <script src="javascript/js.js"></script>
 <script src="javascript/slide.js"></script>
 <script src="javascript/loader.js"></script>
 </body>
+
 </html>
