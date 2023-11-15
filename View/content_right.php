@@ -1,30 +1,4 @@
-<!-- <div class="row magin">
-    <div class="title">
-        Tài khoản
-    </div>
-    <div class="content form">
-        <form action="" method="post">
-            <div class="row magin10">
-                Tên Đăng Nhập <br>
-                <input type="text" name="user" id="">
-            </div>
-            <div class="row magin10">
-                Mật khẩu <br>
-                <input type="password" name="user" id="">
-            </div>
-            <div class="row magin10">
-                <input type="checkbox"> Ghi nhớ tài khoản
-            </div>
-            <div class="row magin10">
-                <input type="submit" value="Đăng Nhập">
-            </div>
-        </form>
-        <ul>
-            <li><a href="#">Quên Mật Khẩu</a></li>
-            <li> <a href="index.php?act=register">Đăng kí thành viên</a></li>
-        </ul>
-    </div>
-</div> -->
+
 <style>
     .wrapper {
         height: 50px;
@@ -124,23 +98,6 @@
 </div>
 <div class="row magin">
     <div class="title">
-        Đồng hồ
-    </div>
-    <div class="contents chill">
-        <div class="wrapper">
-            <div class="display">
-                <div id="time"></div>
-            </div>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="date_hientai">
-            <p id="currentDate"></p>
-        </div>
-    </div>
-</div>
-<div class="row magin">
-    <div class="title">
         Top 10
     </div>
     <div class=" row content">
@@ -222,42 +179,3 @@
         </div>
     </div>
 </div>
-<script>
-    setInterval(() => {
-        const time = document.querySelector(".display #time");
-        let date = new Date();
-        let hours = date.getHours();
-        let minutes = date.getMinutes();
-        let seconds = date.getSeconds();
-        let day_night = "AM";
-        if (hours > 12) {
-            day_night = "PM";
-            hours = hours - 12;
-        }
-        if (seconds < 10) {
-            seconds = "0" + seconds;
-        }
-        if (minutes < 10) {
-            minutes = "0" + minutes;
-        }
-        if (hours < 10) {
-            hours = "0" + hours;
-        }
-        time.textContent = hours + ":" + minutes + ":" + seconds + ":" + day_night;
-    });
-</script>
-<script>
-    // Tạo một hàm để lấy ngày tháng năm hiện tại
-    function getCurrentDate() {
-        var currentDate = new Date();
-        var day = currentDate.getDate();
-        var month = currentDate.getMonth() + 1; // Tháng bắt đầu từ 0, nên cộng thêm 1
-        var year = currentDate.getFullYear();
-
-        // Hiển thị ngày tháng năm lên trang
-        var dateStr = day + '/' + month + '/' + year;
-        document.getElementById('currentDate').textContent = dateStr + ' ' + '❤️';
-    }
-    // Gọi hàm để cập nhật ngày tháng năm khi trang web được tải
-    getCurrentDate();
-</script>
