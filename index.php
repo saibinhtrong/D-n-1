@@ -14,7 +14,6 @@ if ((isset($_GET['act'])) && $_GET['act'] != "") {
     $act = $_GET['act'];
     switch ($act) {
        
-
         case 'product_list':
             if (isset($_POST['kyw']) && ($_POST['kyw'] != "")) {
                 $kyw = $_POST['kyw'];
