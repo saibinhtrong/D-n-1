@@ -37,14 +37,14 @@ section {
     right: 0;
     top: 0;
     width: 100%;
-    background: #ee4d2d;
+    background:#fff;
     z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-right: 15px;
     padding-left: 15px;
-    height: 60px;
+    height: 100px;
 }
 
 .app-sidebar__toggle {
@@ -73,7 +73,7 @@ section {
 }
 
 .app-nav h3 {
-    color: rgb(255, 255, 255);
+    color: black;
     font-size: 25px;
     margin-left: 210px;
 }
@@ -112,12 +112,12 @@ section {
     bottom: 0px;
     left: 0px;
     padding-top: 20px;
-    width: 250px;
+    width: 300px;
     padding-left: 10px;
     padding-right: 10px;
     z-index: 10;
     overflow: auto;
-    background: rgb(105, 105, 105);
+    background: #212b36;
 }
 
 .app-sidebar__user {
@@ -750,3 +750,4 @@ section {
 .chart {
     margin-left: 300px;
 }
+
