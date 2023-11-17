@@ -3,6 +3,7 @@ session_start();
 include_once "model/pdo.php";
 include_once "model/sanpham.php";
 include_once "model/danhmuc.php";
+include_once "model/Account.php";
 include "View/header.php";
 include "global.php";
 
@@ -27,9 +28,77 @@ if ((isset($_GET['act'])) && $_GET['act'] != "") {
             $product_list = loadAll_sanpham($kyw, $id_dm);
             $Ten_dm = load_Name($id_dm);
             include "View/product.php";
-
             break;
-         
+
+            // đăng ký đăng nhập
+        case 'register':
+            if (isset($_POST['dangky']) && ($_POST['dangky'])) {
+                $Email = $_POST['email'];
+                $User = $_POST['username'];
+                $Password = $_POST['password'];
+                inser_Account($User, $Password, $Email);
+                $Thongbao = "Đăng kí thành công";
+            }
+            include "View/Account/signup.php";
+            break;
+
+        case 'login':
+            if (isset($_POST['login']) && ($_POST['login'])) {
+                $User = $_POST['username'];
+                $Password = $_POST['password'];
+                $check_user = check_user($User, $Password);
+                if (is_array($check_user)) {
+                    $_SESSION['username'] = $check_user;
+                    header('location: index.php?act=home ');
+                    //   $Thongbao = "Đăng nhập thành công";
+                } else {
+                    $Thongbao = "Tài khoản không tồn tại";
+                }
+            }
+            include "View/Account/login.php";
+            break;
+
+        case 'User':
+            include "View/Account/User.php";
+            break;
+
+        case 'logout':
+            session_unset();
+            header('location: index.php?act=home');
+            break;
+
+        case 'your':
+            include "View/Account/your.php";
+            break;
+
+            case 'update_user':
+                if (isset($_POST['update_user']) && ($_POST['update_user'])) {
+                    $User = $_POST['user'];
+                    $Tel = $_POST['tel'];
+                    $Email = $_POST['email'];
+                    $Address = $_POST['address'];
+                    $Password = $_POST['pass'];
+                    $id = $_POST['id'];
+                    update_user($id, $User, $Email, $Password, $Tel, $Address);
+                    $_SESSION['username'] = check_user($User, $Password);
+                    $Thongbao = "Cập nhật thành công";
+                    // header('location: index.php?act=update_user');
+                }
+                include "View/Account/update_user.php";
+                break;
+                case 'forgot':
+                    if (isset($_POST['forgot']) && ($_POST['forgot'])) {
+                        $Email = $_POST['email'];
+                        $check_pass = check_Pass($Email);
+                        if (is_array($check_pass)) {
+                            $Thongbao = "Mật khẩu của bạn là: " . $check_pass['Password'];
+                        } else {
+                            $Thongbao = "Email không tồn tại";
+                        }
+                    }
+                    include "View/Account/Forgot.php";
+                    break;
+
         default:
             include "View/home.php";
             break;

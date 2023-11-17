@@ -36,22 +36,39 @@
             <div class="synthetic">
                 <i class="fa-sharp fa-solid fa-location-dot"></i> Địa chỉ : Trịnh Văn Bô - Thành Phố Hà Nội 
             </div>
-            <div>
-            
-            </div>
+         
+            <?php
+            if (isset($_SESSION['username'])) {
+                extract($_SESSION['username']);
+            ?>
+                <div class="users">
+                    <a href="index.php?act=User" class="active">
+                        <i class="fa-solid fa-user-shield"></i>
+                        <?= $User ?>
+                    </a>
+                </div>
+            <?php
+            } else {
+
+            ?>
                 <div class="users">
                     <a href="index.php?act=login" class="active">
                         <i class="fa-solid fa-user-shield"></i>
                         Tài Khoản
                     </a>
                 </div>
+            <?php }
+            ?>
         </header>
+        <!-- <div class=" row magin header">
+            <h1>SIÊU THỊ TRỰC TUYẾN</h1>
+        </div> -->
         <div class=" menu">
             <ul>
                 <li>
                     <a href="index.php?act=home" class="active" style="--i:1;">Trang Chủ</a>
                 </li>
-               
+
                 <li>
                     <a href="index.php?act=about" style="--i:2">Giới Thiệu</a>
                 </li>
