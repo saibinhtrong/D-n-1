@@ -51,9 +51,7 @@
                 <li>
                     <a href="index.php?act=home" class="active" style="--i:1;">Trang Chủ</a>
                 </li>
-                <li>
-                    <a href="index.php?act=product_list" style="--i:2">Sản Phẩm</a>
-                </li>
+               
                 <li>
                     <a href="index.php?act=about" style="--i:2">Giới Thiệu</a>
                 </li>

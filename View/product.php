@@ -5,7 +5,7 @@
             ?>
             <div class="title"><a href="index.php?act=home"> Trang Chủ </a>
                 <i class="fa-solid fa-angles-right"></i>
-                Danh Mục
+                Danh mục
                 <i class="fa-solid fa-angles-right"></i>
                 <div class="cmd">
                     <?= $Ten_dm ?>
