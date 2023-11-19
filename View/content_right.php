@@ -146,21 +146,7 @@
             <li>
                 <a href="#">Sim số đẹp</a>
             </li>
-            <li>
-                <a href="#">Sim 4G</a>
-            </li>
-            <li>
-                <a href="#">Camera an ninh</a>
-            </li>
-            <li>
-                <a href="#">Phụ kiện laptop</a>
-            </li>
-            <li>
-                <a href="#">Quạt mini</a>
-            </li>
-            <li>
-                <a href="#">Apple Care</a>
-            </li>
+          
             <li>
                 <a href="#">Gaming Gear</a>
             </li>

@@ -1,4 +1,12 @@
 <?php
+session_start();
+ob_start();
+if (isset($_SESSION['s_user']) && (is_array($_SESSION['s_user'])) && (count($_SESSION['s_user']) > 0)) {
+    $admin = $_SESSION['s_user'];
+} else {
+    header('location: login.php');
+}
+
 include "../model/pdo.php";
 include "../model/danhmuc.php";
 include "../model/sanpham.php";
@@ -125,6 +133,14 @@ if (isset($_GET['act'])) {
                         $list_dm = loadAll_danhmuc();
                         $list_sp = loadAll_sanpham("", 0);
                         include "San_Pham/list.php";
+                        break;
+               
+                case 'logout_admin':
+                        session_unset();
+                        header('location: /duan1');
+                        break;
+                default:
+                        include "home.php";
                         break;
         }
 } else {
