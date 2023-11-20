@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link id="favicon" rel="icon" type="image/logo-acgen.png" sizes="50x50" href="image/logo-acgen.png">
+    <link id="favicon" rel="icon" type="image/zyro-image.png" sizes="50x50" href="image/zyro-image.png">
     <link rel="stylesheet" href="style/style.css">
-
-    <title>Shop Schannel</title>
+  
+    <title>Mobile Tech</title>
 </head>
 
 <body>
@@ -27,7 +27,7 @@
             <div class="logo">
                 <img src="image/zyro-image.png">
             </div>
-            <form action="index.php?act=product_list" method="post">
+            <form action="index.php?act=product_lizyro-image.pngst" method="post">
                 <div class="search">
                     <input name="kyw" placeholder=" Tìm Kiếm" type="text">
                     <button type="submit" name="timkiem"> <i class="fa-solid fa-magnifying-glass"></i></button>
@@ -36,6 +36,13 @@
             <div class="synthetic">
                 <i class="fa-sharp fa-solid fa-location-dot"></i> Địa chỉ : Trịnh Văn Bô - Thành Phố Hà Nội 
             </div>
+           
+            <div class="users">
+                    <a href="index.php?act=cart" class="active">
+                    <box-icon name='cart'></box-icon>
+                    </a>
+                </div>
+          
          
             <?php
             if (isset($_SESSION['username'])) {

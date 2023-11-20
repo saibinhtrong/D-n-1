@@ -65,6 +65,7 @@
 <script src="javascript/js.js"></script>
 <script src="javascript/slide.js"></script>
 <script src="javascript/loader.js"></script>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 
 </html>
