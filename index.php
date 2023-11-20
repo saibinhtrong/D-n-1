@@ -14,6 +14,18 @@ $list_sp_top = loadAll_sanpham_top();
 if ((isset($_GET['act'])) && $_GET['act'] != "") {
     $act = $_GET['act'];
     switch ($act) {
+        case 'product':
+            if (isset($_GET['id_sp']) && ($_GET['id_sp'] > 0)) {
+                $id = $_GET['id_sp'];
+                $list_sp_one = loadOne_sanpham($id);
+                extract($list_sp_one);
+                $list_sp_kind = load_sanpham_kind($ID, $ID_dm);
+                include "View/chitiet_sanpham.php";
+            } else {
+                include "View/home.php";
+            }
+            break;
+
         case 'product_list':
             if (isset($_POST['kyw']) && ($_POST['kyw'] != "")) {
                 $kyw = $_POST['kyw'];
@@ -96,12 +108,14 @@ if ((isset($_GET['act'])) && $_GET['act'] != "") {
                             $Thongbao = "Email không tồn tại";
                         }
                     }
-                    include "View/Account/Forgot.php";
-                    break;
-
-        default:
-            include "View/home.php";
-            break;
+                        include "View/Account/Forgot.php";
+                        break;
+                    case 'feedback':
+                        include "View/feedback.php";
+                        break;
+                    default:
+                        include "View/home.php";
+                        break;
     }
 } else {
     include "View/home.php";
