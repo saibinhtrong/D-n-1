@@ -76,9 +76,9 @@
                 </a>
             </li>
             <li>
-                <a class="app-menu__item" href="../index.php">
-                    <i class='app-menu__icon bx bx bx bxl-unity'></i>
-                    <span class="app-menu__label">Public</span>
+                <a class="app-menu__item" href="index.php?act=logout_admin">
+                <i class='bx bx-log-out bx-rotate-180'></i>
+                    <span class="app-menu__label">logout</span>
                 </a>
             </li>
 
