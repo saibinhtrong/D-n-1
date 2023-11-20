@@ -13,7 +13,7 @@ if (isset($_POST['login_admin'])) {
             header('location: index.php');
         } else {
             $Thongbao = "Tài khoản không có quyền vào trang quản trị";
-            header("Refresh: 1.5; url=/duan1");
+            header("Refresh: 1.5; url=../index.php");
            
         }
     } else {

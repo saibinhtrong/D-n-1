@@ -137,7 +137,7 @@ if (isset($_GET['act'])) {
                
                 case 'logout_admin':
                         session_unset();
-                        header('location: /duan1/index.php');
+                        header('location: ../index.php');
                         break;
                 default:
                         include "home.php";
