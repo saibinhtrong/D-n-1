@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 
-<body>
+<>
     <!-- <script>
         swal("Xin Chào Admin", "Chúc Bạn 1 Ngày Tốt Lành Nhé", "");
     </script> -->
@@ -85,7 +85,4 @@
             </li>
 
         </ul>
-    </aside>
-</body>
-
-</html>
+    </aside>a

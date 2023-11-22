@@ -168,6 +168,7 @@ header {
 
 .footer {
     font-size: 20px;
+    width: 1063px;
     color: rgb(0, 0, 0);
     padding: 10px;
     border-radius: 5px;
@@ -1176,6 +1177,7 @@ textarea {
     .warper {
         width: 570px;
         height: 100vh;
+        
     }
     .container {
         width: 100%;
