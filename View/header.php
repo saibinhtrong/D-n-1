@@ -23,7 +23,7 @@
                 <img src="https://cellphones.com.vn/smember/_nuxt/img/Shipper_CPS3.77d4065.png" alt="">
                 <h1>Xin Chào</h1>
             </div> -->
-        <header >
+        <header>
             <div class="logo">
                 <img src="image/zyro-image.png">
             </div>

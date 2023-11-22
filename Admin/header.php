@@ -75,10 +75,12 @@
                     <span class="app-menu__label">Comment</span>
                 </a>
             </li>
+            <br>
+            <br>
             <li>
                 <a class="app-menu__item" href="index.php?act=logout_admin">
                 <i class='bx bx-log-out bx-rotate-180'></i>
-                    <span class="app-menu__label">logout</span>
+                    <span class="app-menu__label">&nbsp; &nbsp; &nbsp; logout</span>
                 </a>
             </li>
 
