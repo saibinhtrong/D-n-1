@@ -110,8 +110,18 @@ if ((isset($_GET['act'])) && $_GET['act'] != "") {
                     }
                         include "View/Account/Forgot.php";
                         break;
+                    
+                    case 'about':
+                       include "View/about.php";
+                       break;
+                    case 'contact':
+                        include "View/contact.php";
+                        break;
                     case 'feedback':
                         include "View/feedback.php";
+                        break;
+                    case 'ask':
+                        include "View/ask.php";
                         break;
                     default:
                         include "View/home.php";
