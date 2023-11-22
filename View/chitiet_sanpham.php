@@ -19,12 +19,9 @@
                     </div>
                 </div>
                 <div class="carts">
-                    <button>
                     <div class="phienban">
-
                         <p>512GB</p>
                         <p>19.000.900</p>
-                    </button>
                     </div>
                     <div class="phienbans">
                         <p>256GB</p>
