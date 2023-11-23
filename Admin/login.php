@@ -46,7 +46,7 @@ if (isset($_POST['login_admin'])) {
         <div class="container-login100">
             <div class="wrap-login100">
                 <div class="login100-pic js-tilt" data-tilt>
-                    <img src="../image/team.jpg" alt="IMG">
+                    <img src="../image/z4875478796800_24496dee23df2c0e157d6cc58ede41de.jpg" alt="IMG">
                 </div>
                 <!--=====TIÊU ĐỀ======-->
                 <form action="#" method="post" class="login100-form validate-form">

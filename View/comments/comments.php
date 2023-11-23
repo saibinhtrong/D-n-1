@@ -1,10 +1,17 @@
 <?php
 session_start();
-$iduser = $_SESSION['username']['ID'];
-include "../../model/pdo.php";
-include "../../model/comments.php";
-$idpro = $_REQUEST['idpro'];
-$list_comment = loadAll_comment($idpro);
+if (isset($_SESSION['username']) && isset($_SESSION['username']['ID'])) {
+    $iduser = $_SESSION['username']['ID'];
+
+    include "../../model/pdo.php";
+    include "../../model/comments.php";
+
+    $idpro = $_REQUEST['idpro'];
+    $list_comment = loadAll_comment($idpro);
+} else {
+   
+    exit();
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -88,7 +95,7 @@ $list_comment = loadAll_comment($idpro);
         <div class="conent_bl">
             <table>
                 <tr>
-                    <th>User</th>
+                    <th>ID</th>
                     <th>Comment</th>
                     <th>Date</th>
                 </tr>
