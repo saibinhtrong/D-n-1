@@ -60,11 +60,12 @@ if (isset($_SESSION['username']) && isset($_SESSION['username']['ID'])) {
             border-top: 1px solid #ccc;
             border-bottom: 1px solid #ccc;
             margin-bottom: -20px;
+            
         }
 
         .titles input[type='text'] {
             padding: 10px;
-            width: 650px;
+            width: 80%;
             border-radius: 10px;
             border: 1px solid #ccc;
         }

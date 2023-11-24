@@ -39,7 +39,7 @@
                     <button>Trả góp qua thẻ</button>
                 </div>
                 <div class="timhieu">
-                    <button>Tìm hiểu thêm</button>
+                    <button>Thông số kỹ thuật</button>
                 </div>
             </div>
         </div>
