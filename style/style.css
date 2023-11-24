@@ -797,8 +797,8 @@ header {
 /* Phần User */
 
 .image_user img {
-    width: 70px;
-    margin-top: 10px;
+    width: 170px;
+    margin-bottom: 10px;
 }
 
 .product_left {
@@ -866,9 +866,7 @@ header {
     font-size: 17px;
 }
 
-.conts h3 {
-    margin-bottom: 60px;
-}
+
 
 .smember_info {
     display: grid;

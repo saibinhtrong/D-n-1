@@ -16,7 +16,7 @@
                 <p><strong>Liên hệ hợp tác: </strong>0876-55-2004</p>
             </div>
             <div class="img">
-                <img src="image/Shipper_CPS3.77d4065.png" alt="">
+                <img src="image/OIP__4_-removebg-preview.png" alt="">
             </div>
         </div>
     </div>

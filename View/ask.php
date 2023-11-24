@@ -19,7 +19,7 @@
                 </form>
             </div>
             <div class="img">
-                <img src="image/Shipper_CPS3.77d4065.png" alt="">
+                <img src="image/OIP__4_-removebg-preview.png" alt="">
             </div>
         </div>
     </div>

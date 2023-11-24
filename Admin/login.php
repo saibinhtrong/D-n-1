@@ -46,7 +46,7 @@ if (isset($_POST['login_admin'])) {
         <div class="container-login100">
             <div class="wrap-login100">
                 <div class="login100-pic js-tilt" data-tilt>
-                    <img src="../image/z4875478796800_24496dee23df2c0e157d6cc58ede41de.jpg" alt="IMG">
+                    <img src="../image/OIP__4_-removebg-preview.png" alt="IMG">
                 </div>
                 <!--=====TIÊU ĐỀ======-->
                 <form action="#" method="post" class="login100-form validate-form">
@@ -82,13 +82,6 @@ if (isset($_POST['login_admin'])) {
                                 
                                 ?>
                             </h2>
-                        </div>
-                        <!-- =====LINK TÌM MẬT KHẨU======-->
-                                 <div class="text-right p-t-12">
-                             <a class="txt2" href="/forgot.html">
-                                 Bạn quên mật khẩu?
-                             </a>
-                         </div>
                     </form>
                     <!--=====FOOTER======-->
                     <div class="text-center p-t-70 txt2">

@@ -35,9 +35,7 @@
     </div>
     <div class="product_rights">
         <div class="conts">
-            <div class="image_user">
-                <img src="image/Shipper_CPS3.77d4065.png" alt="">
-            </div>
+          
             <?php
             if (isset($_SESSION['username'])) {
                 extract($_SESSION['username']);
@@ -50,6 +48,9 @@
                 <h4>Xin Chào</h4>
             <?php }
             ?>
+              <div class="image_user">
+                <img src="image/OIP__4_-removebg-preview.png" alt="">
+            </div>
         </div>
         <div class="smember">
             <div class="date">

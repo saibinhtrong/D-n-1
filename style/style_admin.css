@@ -261,6 +261,8 @@ iframe {
     margin-left: var(--auto);
     margin-top: var(--auto);
     margin-right: var(--auto);
+    margin-bottom: var(--auto);
+    
 }
 
 

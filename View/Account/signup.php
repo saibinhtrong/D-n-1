@@ -31,7 +31,7 @@
                     <input type="submit" name="dangky" value=" Đăng Ký">
                 </div>
                 <div class="sp">
-                    Bạn đã có tài khoản?<a href="index.php?act=login"> Đăng Nhập</a>
+                    <a href="index.php?act=login"> Đăng Nhập</a>
                 </div>
             </div>
             <div class="thongbao">
