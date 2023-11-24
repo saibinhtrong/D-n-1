@@ -83,12 +83,12 @@ if (isset($_POST['login_admin'])) {
                                 ?>
                             </h2>
                         </div>
-                        <!--=====LINK TÌM MẬT KHẨU======-->
-                        <!-- <div class="text-right p-t-12">
+                        <!-- =====LINK TÌM MẬT KHẨU======-->
+                                 <div class="text-right p-t-12">
                              <a class="txt2" href="/forgot.html">
                                  Bạn quên mật khẩu?
                              </a>
-                         </div> -->
+                         </div>
                     </form>
                     <!--=====FOOTER======-->
                     <div class="text-center p-t-70 txt2">

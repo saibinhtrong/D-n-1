@@ -21,11 +21,6 @@
     <header class="app-header">
         <ul class="app-nav">
             <h3>Trang Quản Trị</h3>
-            <form action="index.php?act=out" class="rows">
-                <a class="app-nav__item" href="index.php?act=logout_admin">
-                    Thoát <i class='bx bx-log-out bx-rotate-180'></i>
-                </a>
-            </form>
         </ul>
     </header>
     <!-- Sidebar menu-->
