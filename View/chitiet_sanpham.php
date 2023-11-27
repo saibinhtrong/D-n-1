@@ -20,19 +20,23 @@
                 </div>
                 <div class="carts">
                     <div class="phienban">
-                        <p>512GB</p>
-                        <p>19.000.900</p>
+                        <p> $ <?php echo $Price ?></p>
                     </div>
-                    <div class="phienbans">
-                        <p>256GB</p>
-                        <p>17.000.900</p>
-                    </div>
+                  
                 </div>
                 <div class="pay">
                     <button>Mua ngay</button>
-                    <div class="cart">
-                        <i class="fa-solid fa-cart-arrow-down"></i>
-                    </div>
+
+                    <?php
+                    echo '  
+                    <form action="index.php?act=addtocart" method="post" class="cart">
+                        <input type="hidden" name="id" value="' . $ID . '">
+                        <input type="hidden" name="name" value="' . $Name . '">
+                        <input type="hidden" name="image" value="' . $images . '">
+                        <input type="hidden" name="price" value="' . $Price. '">
+                        <i class="fa-solid fa-cart-arrow-down"></i><input type="submit" name="addtocart" value="Thêm">
+                    </form>';
+                    ?>
                 </div>
                 <div class="tragop">
                     <button>Trả góp 0%</button>

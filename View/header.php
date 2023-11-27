@@ -38,7 +38,7 @@
             </div>
            
             <div class="users">
-                    <a href="index.php?act=cart" class="active">
+                    <a href="index.php?act=viewcart" class="active">
                     <box-icon name='cart'></box-icon>
                     </a>
                 </div>

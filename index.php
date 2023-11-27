@@ -7,6 +7,7 @@ include_once "model/Account.php";
 include "View/header.php";
 include "global.php";
 
+if (!isset($_SESSION['mycart'])) $_SESSION['mycart'] = [];
 
 $list_sp_home = loadAll_sanpham_home();
 $list_dm_home = loadAll_danhmuc();
@@ -83,49 +84,76 @@ if ((isset($_GET['act'])) && $_GET['act'] != "") {
             include "View/Account/your.php";
             break;
 
-            case 'update_user':
-                if (isset($_POST['update_user']) && ($_POST['update_user'])) {
-                    $User = $_POST['user'];
-                    $Tel = $_POST['tel'];
-                    $Email = $_POST['email'];
-                    $Address = $_POST['address'];
-                    $Password = $_POST['pass'];
-                    $id = $_POST['id'];
-                    update_user($id, $User, $Email, $Password, $Tel, $Address);
-                    $_SESSION['username'] = check_user($User, $Password);
-                    $Thongbao = "Cập nhật thành công";
-                    // header('location: index.php?act=update_user');
+        case 'update_user':
+            if (isset($_POST['update_user']) && ($_POST['update_user'])) {
+                $User = $_POST['user'];
+                $Tel = $_POST['tel'];
+                $Email = $_POST['email'];
+                $Address = $_POST['address'];
+                $Password = $_POST['pass'];
+                $id = $_POST['id'];
+                update_user($id, $User, $Email, $Password, $Tel, $Address);
+                $_SESSION['username'] = check_user($User, $Password);
+                $Thongbao = "Cập nhật thành công";
+                // header('location: index.php?act=update_user');
+            }
+            include "View/Account/update_user.php";
+            break;
+        case 'forgot':
+            if (isset($_POST['forgot']) && ($_POST['forgot'])) {
+                $Email = $_POST['email'];
+                $check_pass = check_Pass($Email);
+                if (is_array($check_pass)) {
+                    $Thongbao = "Mật khẩu của bạn là: " . $check_pass['Password'];
+                } else {
+                    $Thongbao = "Email không tồn tại";
                 }
-                include "View/Account/update_user.php";
-                break;
-                case 'forgot':
-                    if (isset($_POST['forgot']) && ($_POST['forgot'])) {
-                        $Email = $_POST['email'];
-                        $check_pass = check_Pass($Email);
-                        if (is_array($check_pass)) {
-                            $Thongbao = "Mật khẩu của bạn là: " . $check_pass['Password'];
-                        } else {
-                            $Thongbao = "Email không tồn tại";
-                        }
-                    }
-                        include "View/Account/Forgot.php";
-                        break;
-                    
-                    case 'about':
-                       include "View/about.php";
-                       break;
-                    case 'contact':
-                        include "View/contact.php";
-                        break;
-                    case 'feedback':
-                        include "View/feedback.php";
-                        break;
-                    case 'ask':
-                        include "View/ask.php";
-                        break;
-                    default:
-                        include "View/home.php";
-                        break;
+            }
+            include "View/Account/Forgot.php";
+            break;
+
+        case 'addtocart':
+            if (isset($_POST['addtocart']) && ($_POST['addtocart'])) {
+                $id = $_POST['id'];
+                $name = $_POST['name'];
+                $image = $_POST['image'];
+                $price = $_POST['price'];
+                $soluong = 1;
+                $ttien = $soluong * $price;
+                $spadd = [$id, $name, $image, $price, $soluong, $ttien];
+                array_push($_SESSION['mycart'], $spadd);
+            }
+            include "View/cart/viewcart.php";
+            break;
+        case 'delcart':
+            if (isset($_GET['idcart'])) {
+                $idcart = $_GET['idcart'];
+                array_splice($_SESSION['mycart'], $_GET['idcart'], 1);
+            } else {
+                $_SESSION['mycart'] = [];
+            }
+            break;
+        case 'bill':
+            include "View/cart/bill.php";
+            break;
+        case 'viewcart':
+            include "View/cart/viewcart.php";
+            break;
+        case 'about':
+            include "View/about.php";
+            break;
+        case 'contact':
+            include "View/contact.php";
+            break;
+        case 'feedback':
+            include "View/feedback.php";
+            break;
+        case 'ask':
+            include "View/ask.php";
+            break;
+        default:
+            include "View/home.php";
+            break;
     }
 } else {
     include "View/home.php";

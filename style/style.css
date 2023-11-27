@@ -40,6 +40,10 @@ header {
     width: 100%;
 }
 
+.mb {
+    margin-bottom: 20px;
+}
+
 .fixed {
     margin-top: 125px;
 }
@@ -1390,3 +1394,82 @@ textarea {
     }
 }
 
+/* cart css */
+
+
+.thongtinnhanhang tr td {
+    text-align: left;
+    padding: 10px;
+}
+
+.thongtinnhanhang input {
+    width: 100%;
+    border: 1px #CCC solid;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#bill input[type="submit"] {
+    position: unset;
+    width: 150px;
+    border: 1px #F90 solid;
+    background-image: linear-gradient(#F90, #F60);
+    padding: 10px;
+    border-radius: 5px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.dongy:hover {
+    background-image: linear-gradient(#F30, #000);
+}
+
+.cart-title {
+    margin: 20px 0px;
+    font-size: 1.9vw;
+    color: #F60;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-table th {
+    background-color: #999;
+    padding: 10px;
+}
+.cart-table th,
+td{
+    border: 1px #CCC solid;
+    text-align: center;
+}
+.total{
+    width: calc(100% - 20px);
+    padding: 0px 10px;
+    text-align: right;
+}
+.th-total{
+    width: calc(100% - 10px);
+    padding: 0px 5px;
+    text-align: right;
+    font-size: 1.5rem;
+}
+.image-cart img{
+    width: 100px;
+}
+.button-cart input {
+    
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        background-color: rgb(255, 157, 0);
+        border: 1px solid rgb(255, 179, 0);
+        width: 328px; 
+        height: 40px;
+        padding: 10px;
+        border-radius: 15px;
+        margin-top: 10px;
+        margin-right: 8px;
+        font-size: 17px;
+    
+}
