@@ -26,16 +26,20 @@
                 </div>
                 <div class="pay">
                     <button>Mua ngay</button>
-
                     <?php
                     echo '  
-                    <form action="index.php?act=addtocart" method="post" class="cart">
+                    <form action="index.php?act=addtocart" method="post">
+                    <button type="submit" class="cart"><i class="fa-solid fa-cart-arrow-down"></i></button>
                         <input type="hidden" name="id" value="' . $ID . '">
                         <input type="hidden" name="name" value="' . $Name . '">
                         <input type="hidden" name="image" value="' . $images . '">
                         <input type="hidden" name="price" value="' . $Price. '">
+
                        <i class="fa-solid fa-cart-arrow-down"> </i><input type="submit" name="addtocart" value="Thêm">
                     </form>';
+
+                  
+
                     ?>
                 </div>
                 <div class="tragop">

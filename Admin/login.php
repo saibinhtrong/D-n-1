@@ -48,11 +48,15 @@ if (isset($_POST['login_admin'])) {
                 <div class="login100-pic js-tilt" data-tilt>
                     <img src="../image/OIP__4_-removebg-preview.png" alt="IMG">
                 </div>
+                
                 <!--=====TIÊU ĐỀ======-->
                 <form action="#" method="post" class="login100-form validate-form">
                     <span class="login100-form-title">
                         <b>ĐĂNG NHẬP HỆ THỐNG</b>
                     </span>
+                    <div>
+                        <img src="" alt="">
+                    </div>
                     <!--=====FORM INPUT TÀI KHOẢN VÀ PASSWORD======-->
                     <form action="#" method="post">
                         <div class="wrap-input100 validate-input">
@@ -84,6 +88,9 @@ if (isset($_POST['login_admin'])) {
                             </h2>
                     </form>
                     <!--=====FOOTER======-->
+                    <div class="text-center p-t-70 txt2">
+                    <a href="index.php?act=logout_admin">&nbsp;Quay lại trang chủ</a>
+                    </div>
                     <div class="text-center p-t-70 txt2">
                         Phần mềm quản lý bán hàng Code </a>
                     </div>
