@@ -14,7 +14,7 @@
         <?php } else ?>
         <div class="child">
             <i class="fa-solid fa-cart-arrow-down"></i>
-            <li><a href="index.php?act=ls_mua">Lịch sử mua hàng</a></li>
+            <li><a href="index.php?act=mybill">Đơn hàng của tôi</a></li>
         </div>
         <div class="child">
             <i class="fa-solid fa-user-shield"></i>

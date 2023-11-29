@@ -4,6 +4,8 @@ include_once "model/pdo.php";
 include_once "model/sanpham.php";
 include_once "model/danhmuc.php";
 include_once "model/Account.php";
+include_once "model/cart.php";
+include_once "model/comments.php";
 include "View/header.php";
 include "global.php";
 
@@ -132,6 +134,35 @@ if ((isset($_GET['act'])) && $_GET['act'] != "") {
             } else {
                 $_SESSION['mycart'] = [];
             }
+            header('location: index.php?act=viewcart');
+            break;
+        case 'billcomfirm':
+            if (isset($_POST['dongy']) && ($_POST['dongy'])) {
+                if (isset($_SESSION['username'])) $iduser = $_SESSION['username']['ID'];
+                else $iduser = 0;
+                $name = $_POST['User'];
+                $email = $_POST['Email'];
+                $address = $_POST['Address'];
+                $tel = $_POST['Tel'];
+                $pttt = $_POST['pttt'];
+                $ngaydathang = date('h:i:sa d/m/Y');
+                $tongdonhang = tongdonhang();
+
+                $idbill = insert_bill($iduser, $name, $email, $address, $tel, $pttt, $ngaydathang, $tongdonhang);
+                
+                foreach ($_SESSION['mycart'] as $cart) {
+                    insert_cart($_SESSION['username']['ID'], $cart[0], $cart[2], $cart[1], $cart[3], $cart[4], $cart[5], $idbill);
+                
+                }
+                $_SESSION['cart'] = [];
+            }
+            $bill = loadone_bill($idbill);
+            
+            include "View/cart/billcomfirm.php";
+            break;
+        case 'mybill':
+            $listbill=loadall_bill($_SESSION['username']['ID']);
+            include "View/cart/mybill.php";
             break;
         case 'bill':
             include "View/cart/bill.php";

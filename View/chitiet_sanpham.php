@@ -34,7 +34,7 @@
                         <input type="hidden" name="name" value="' . $Name . '">
                         <input type="hidden" name="image" value="' . $images . '">
                         <input type="hidden" name="price" value="' . $Price. '">
-                        <i class="fa-solid fa-cart-arrow-down"></i><input type="submit" name="addtocart" value="Thêm">
+                       <i class="fa-solid fa-cart-arrow-down"> </i><input type="submit" name="addtocart" value="Thêm">
                     </form>';
                     ?>
                 </div>
