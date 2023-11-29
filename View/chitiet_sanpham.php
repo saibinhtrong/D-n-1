@@ -28,8 +28,8 @@
                     <button>Mua ngay</button>
                     <?php
                     echo '  
-                    <form action="index.php?act=addtocart" method="post">
-                    <button type="submit" class="cart"><i class="fa-solid fa-cart-arrow-down"></i></button>
+                    <form action="index.php?act=addtocart" method="post" class="cart">
+                        <input type="submit" name="addtocart" value="them" class="giohang"><i class="fa-solid fa-cart-arrow-down"></i>
                         <input type="hidden" name="id" value="' . $ID . '">
                         <input type="hidden" name="name" value="' . $Name . '">
                         <input type="hidden" name="image" value="' . $images . '">
@@ -39,7 +39,6 @@
                 </div>
                 <div class="tragop">
                     <button>Trả góp 0%</button>
-                    <button>Trả góp qua thẻ</button>
                 </div>
                 <div class="timhieu">
                     <button>Thông số kỹ thuật</button>

@@ -1120,6 +1120,12 @@ textarea {
     top: 50%;
     transform: translateY(-50%);
   }
+.cart i giohang {
+    width: 59px;
+    height: 49px;
+    border: 1px solid red;
+    border-radius: 15px;
+}
 .pay button {
     text-align: center;
     color: #fff;
