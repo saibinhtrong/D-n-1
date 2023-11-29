@@ -55,10 +55,10 @@ function insert_bill($iduser, $name, $email, $address, $tel, $pttt, $ngaydathang
         $sql = "insert into bill (iduser,bill_name, bill_email, bill_address, bill_tel,bill_pttt, ngaydathang, tongdonhang ) values('$iduser','$name', '$email', '$address', '$tel','$pttt', '$ngaydathang', '$tongdonhang')";
         return pdo_execute_return_lastInsertId($sql);
 }
-function insert_cart($iduser, $idpro, $name, $price, $soluong, $thanhtien, $idbill)
+function insert_cart($iduser, $idpro,$image, $name, $price, $soluong, $thanhtien, $idbill)
 {
-        $sql = "insert into bill (iduser, idpro, name, price,soluong, thanhtien, idbill ) values('$iduser', '$idpro', '$name', '$price','$soluong', '$thanhtien', '$idbill')";
-        return  pdo_execute($sql);
+        $sql = "insert into cart (iduser, idpro,image, name, price,soluong, thanhtien, idbill ) values('$iduser', '$idpro','$image', '$name', '$price','$soluong', '$thanhtien', '$idbill')";
+         pdo_execute($sql);
 }
 function loadone_bill($id)
 {
