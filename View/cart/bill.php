@@ -42,10 +42,12 @@
                                 <h1 class="cart-title">PHƯƠNG THỨC THANH TOÁN</h1>
                                 <div class="row boxcontent">
                                         <table>
-                                                <tr>
-                                                        <td><input type="radio" name="pttt" checked>Trả tiền sau khi nhận hàng</td>
-                                                        <td><input type="radio" name="pttt">chuyển khoản ngân hàng</td>
-                                                        <td><input type="radio" name="pttt">thanhh toán online</td>
+                                                <tr class="pttt">
+                                                        <td><input type="radio" value="1" name="pttt" checked>Trả tiền sau khi nhận hàng</td>
+                                                        <td><input type="radio" value="2" name="pttt">chuyển khoản ngân hàng</td>
+                                                        <td><input type="radio" value="3" name="pttt">thanh toán online</td>
+
+ 
                                                 </tr>
                                         </table>
                                 </div>
@@ -110,7 +112,7 @@
                                 </table>
                         </div>
                         <div class="button-cart">
-                        <a href="index.php?act=billcomfirm">  <input class="dongy" type="button" value="ĐỒNG Ý ĐẶT HÀNG"></a>
+                         <input class="dongy" type="submit" name="dongy" value="ĐỒNG Ý ĐẶT HÀNG"></a>
                         </div>
 
                 </form>

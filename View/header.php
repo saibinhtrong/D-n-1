@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link id="favicon" rel="icon" type="image/zyro-image.png" sizes="50x50" href="image/zyro-image.png">
     <link rel="stylesheet" href="style/style.css">
+    
   
     <title>Mobile Tech</title>
 </head>

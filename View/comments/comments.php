@@ -128,7 +128,7 @@ if (isset($_SESSION['username']) && isset($_SESSION['username']['ID'])) {
         if (isset($_POST['guibl']) && ($_POST['guibl'])) {
             $noidung = $_POST['msg'];
             $idpro = $_POST['idpro'];
-
+            $iduser=$_SESSION['username']['ID'];
             $date = date('h:i:sa d/m/Y');
             inser_comment($noidung, $iduser, $idpro, $date);
             header("location: " . $_SERVER['HTTP_REFERER']);
