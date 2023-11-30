@@ -2,7 +2,7 @@
         <div class="row">
                 <div class="col-md-12">
                         <div class="tile">
-                                <h3 class="tile-title">Danh sách danh mục</h3>
+                                <h3 class="tile-title">Danh sách sản phẩm</h3>
                                 <form action="index.php?act=list_sp" method="post" class="bottons">
                                         <input type="text" name="kyw" id="" class="form-control_1">
                                         <select name="ID_danhmuc" id="" class="form-control_1">

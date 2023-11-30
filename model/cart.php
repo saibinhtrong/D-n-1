@@ -68,10 +68,13 @@ function loadone_bill($id)
 }
 function loadall_bill($iduser)
 {
-        $sql = "SELECT * FROM bill WHERE iduser=" . $iduser;
+        $sql = "SELECT * FROM bill WHERE 1" ;
+        if($iduser>0) $sql.=" AND iduser=" . $iduser;
+        $sql.=" order by id desc";
         $listbill = pdo_query($sql);
         return $listbill;
 }
+
 function loadall_cart($idbill)
 {
         $sql = "SELECT * FROM cart WHERE idbill=" . $idbill;
@@ -83,6 +86,14 @@ function loadall_cart_count($idbill)
         $sql = "SELECT * FROM cart WHERE idbill=" . $idbill;
         $bill = pdo_query($sql);
         return sizeof($bill);
+}
+function delete_bill($id)
+{
+        $sql = "DELETE FROM cart WHERE idbill =" . $id;
+        pdo_execute($sql);
+
+    $sql = "DELETE FROM bill WHERE id =" . $id;
+    pdo_execute($sql);
 }
 
 function get_ttdh($n)

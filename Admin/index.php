@@ -13,6 +13,7 @@ include "../model/sanpham.php";
 include "../model/Account.php";
 include "../model/comments.php";
 include "../model/thongke.php";
+include "../model/cart.php";
 include "header.php";
 
 if (isset($_GET['act'])) {
@@ -192,7 +193,19 @@ if (isset($_GET['act'])) {
                         $list_statistical = loadAll_statistical();
                         include "Thongke/list.php";
                         break;
-               
+                case 'listbill':
+                        $listbill = loadall_bill(0);
+                        include "Bill/list.php";
+                        break;
+                case 'xoa_bill':
+                        if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                                $id = $_GET['id'];
+                                delete_bill($id);
+                        }
+                        $listbill = loadall_bill(0);
+                        include "Bill/list.php";
+                        break;
+
                 default:
                         include "home.php";
                         break;
