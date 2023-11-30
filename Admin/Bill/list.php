@@ -4,11 +4,7 @@
                         <div class="tile">
                                 <h3 class="tile-title">Danh sách sản phẩm</h3>
                                 <form action="index.php?act=listbill" method="post" class="bottons">
-                                        <input type="text" name="kyw" id="" class="form-control_1">
-                                        <select name="ID_danhmuc" id="" class="form-control_1">
-                                                <option value="0" selected> Tất Cả</option>
-                                              
-                                        </select>
+                                        <input type="text" name="kyw" id="" class="form-control_1" placeholder="nhập mã đơn hàng">
                                         <input type="submit" name="listok" id="search" value="Tìm Kiếm" class="form-control_1">
                                 </form>
                                 <div class="tile-body">

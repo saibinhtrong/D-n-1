@@ -194,7 +194,13 @@ if (isset($_GET['act'])) {
                         include "Thongke/list.php";
                         break;
                 case 'listbill':
-                        $listbill = loadall_bill(0);
+                        if(isset($_POST['kyw']) &&($_POST['kyw'] !="")){
+                                $kyw=$_POST['kyw'];
+                        }else{
+                                $kyw="";
+                        }
+                        $listbill = loadall_bill($kyw,0);
+
                         include "Bill/list.php";
                         break;
                 case 'xoa_bill':
@@ -202,7 +208,7 @@ if (isset($_GET['act'])) {
                                 $id = $_GET['id'];
                                 delete_bill($id);
                         }
-                        $listbill = loadall_bill(0);
+                        $listbill = loadall_bill($kyw,0);
                         include "Bill/list.php";
                         break;
                 case 'sua_bill':

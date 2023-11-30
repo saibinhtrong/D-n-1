@@ -66,10 +66,11 @@ function loadone_bill($id)
         $bill = pdo_query_one($sql);
         return $bill;
 }
-function loadall_bill($iduser)
+function loadall_bill($kyw=0,$iduser=0)
 {
         $sql = "SELECT * FROM bill WHERE 1" ;
         if($iduser>0) $sql.=" AND iduser=" . $iduser;
+        if($kyw!="") $sql.=" AND id like '%".$kyw."%' ";
         $sql.=" order by id desc";
         $listbill = pdo_query($sql);
         return $listbill;
