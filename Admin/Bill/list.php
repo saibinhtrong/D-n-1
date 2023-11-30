@@ -36,6 +36,7 @@
                                                         $count = loadall_cart_count($bill["id"]);
                                                         $ttdh = get_ttdh($bill['bill_status']);
                                                         $xoa_bill = "index.php?act=xoa_bill&id=" . $id;
+                                                        $sua_bill = "index.php?act=sua_bill&id=" . $id;
                                  echo '<tr>
                                     <td><input type="checkbox" name="" id=""></td>
                                     <td>' . $bill['id'] . '</td>
@@ -45,7 +46,7 @@
                                     <td>' . $bill['ngaydathang']  . '</td>
                                     <td>' . $ttdh . '</td>
                                     <td>
-                                    <a href=""><input class="btn btn-primary btn-sm trash" type="button" value="Sửa"></a>
+                                    <a href="'.$sua_bill.'"><input class="btn btn-primary btn-sm trash" type="button" value="Sửa"></a>
                                     <a href="'.$xoa_bill.'"><input class="btn btn-primary btn-sm edit" type="button" value="Xóa"></a>
                                     </td>
                                     </tr>';

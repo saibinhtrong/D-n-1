@@ -205,7 +205,24 @@ if (isset($_GET['act'])) {
                         $listbill = loadall_bill(0);
                         include "Bill/list.php";
                         break;
+                case 'sua_bill':
+                        if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                                $id = $_GET['id'];
+                                $bill =  loadone_bill($id);
+                        }
 
+                        include "Bill/update.php";
+                        break;
+                case 'update_bill':
+                        if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
+                                $status = $_POST['bill_status'];
+                                $id = $_POST['id'];
+                                update_bill( $status,$id);
+                                $Thongbao = "Cập nhật thành công";
+                                // header('location: index.php?act=update_user');
+                        }
+                        include "Bill/update.php";
+                        break;
                 default:
                         include "home.php";
                         break;

@@ -108,7 +108,7 @@ function get_ttdh($n)
                 case '2':
                         $tt = "sản phẩm đã được gửi đi";
                         break;
-                case '4':
+                case '3':
                         $tt = "đã giao hàng thành công";
                         break;
 
@@ -136,4 +136,10 @@ function get_pttt($t)
                         break;
         }
         return $pt;
+}
+
+function update_bill($status, $id)
+{
+    $sql = "UPDATE bill SET bill_status = '" . $status . "' WHERE id = " . $id;
+    pdo_execute($sql);
 }
