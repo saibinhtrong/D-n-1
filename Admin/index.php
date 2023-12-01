@@ -13,6 +13,7 @@ include "../model/sanpham.php";
 include "../model/Account.php";
 include "../model/comments.php";
 include "../model/thongke.php";
+include "../model/cart.php";
 include "header.php";
 
 if (isset($_GET['act'])) {
@@ -192,7 +193,42 @@ if (isset($_GET['act'])) {
                         $list_statistical = loadAll_statistical();
                         include "Thongke/list.php";
                         break;
-               
+                case 'listbill':
+                        if(isset($_POST['kyw']) &&($_POST['kyw'] !="")){
+                                $kyw=$_POST['kyw'];
+                        }else{
+                                $kyw="";
+                        }
+                        $listbill = loadall_bill_admin($kyw,0);
+
+                        include "Bill/list.php";
+                        break;
+                case 'xoa_bill':
+                        if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                                $id = $_GET['id'];
+                                delete_bill($id);
+                        }
+                        $listbill = loadall_bill_admin($kyw,0);
+                        include "Bill/list.php";
+                        break;
+                case 'sua_bill':
+                        if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                                $id = $_GET['id'];
+                                $bill =  loadone_bill($id);
+                        }
+
+                        include "Bill/update.php";
+                        break;
+                case 'update_bill':
+                        if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
+                                $status = $_POST['bill_status'];
+                                $id = $_POST['id'];
+                                update_bill( $status,$id);
+                                $Thongbao = "Cập nhật thành công";
+                                // header('location: index.php?act=update_user');
+                        }
+                        include "Bill/update.php";
+                        break;
                 default:
                         include "home.php";
                         break;

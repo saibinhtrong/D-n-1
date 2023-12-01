@@ -55,10 +55,10 @@ function insert_bill($iduser, $name, $email, $address, $tel, $pttt, $ngaydathang
         $sql = "insert into bill (iduser,bill_name, bill_email, bill_address, bill_tel,bill_pttt, ngaydathang, tongdonhang ) values('$iduser','$name', '$email', '$address', '$tel','$pttt', '$ngaydathang', '$tongdonhang')";
         return pdo_execute_return_lastInsertId($sql);
 }
-function insert_cart($iduser, $idpro, $name, $price, $soluong, $thanhtien, $idbill)
+function insert_cart($iduser, $idpro,$image, $name, $price, $soluong, $thanhtien, $idbill)
 {
-        $sql = "insert into bill (iduser, idpro, name, price,soluong, thanhtien, idbill ) values('$iduser', '$idpro', '$name', '$price','$soluong', '$thanhtien', '$idbill')";
-        return  pdo_execute($sql);
+        $sql = "insert into cart (iduser, idpro,image, name, price,soluong, thanhtien, idbill ) values('$iduser', '$idpro','$image', '$name', '$price','$soluong', '$thanhtien', '$idbill')";
+         pdo_execute($sql);
 }
 function loadone_bill($id)
 {
@@ -66,12 +66,26 @@ function loadone_bill($id)
         $bill = pdo_query_one($sql);
         return $bill;
 }
-function loadall_bill($iduser)
+function loadall_bill_admin($kyw=0,$iduser=0)
 {
-        $sql = "SELECT * FROM bill WHERE iduser=" . $iduser;
+        $sql = "SELECT * FROM bill WHERE 1" ;
+        if($iduser>0) $sql.=" AND iduser=" . $iduser;
+        if($kyw!="") $sql.=" AND id like '%".$kyw."%' ";
+        $sql.=" order by id desc";
         $listbill = pdo_query($sql);
         return $listbill;
 }
+function loadall_bill($iduser=0)
+{
+        $sql = "SELECT * FROM bill WHERE 1" ;
+        if($iduser>0) $sql.=" AND iduser=" . $iduser;
+     
+        $sql.=" order by id desc";
+        $listbill = pdo_query($sql);
+        return $listbill;
+}
+
+
 function loadall_cart($idbill)
 {
         $sql = "SELECT * FROM cart WHERE idbill=" . $idbill;
@@ -83,6 +97,14 @@ function loadall_cart_count($idbill)
         $sql = "SELECT * FROM cart WHERE idbill=" . $idbill;
         $bill = pdo_query($sql);
         return sizeof($bill);
+}
+function delete_bill($id)
+{
+        $sql = "DELETE FROM cart WHERE idbill =" . $id;
+        pdo_execute($sql);
+
+    $sql = "DELETE FROM bill WHERE id =" . $id;
+    pdo_execute($sql);
 }
 
 function get_ttdh($n)
@@ -97,7 +119,7 @@ function get_ttdh($n)
                 case '2':
                         $tt = "sản phẩm đã được gửi đi";
                         break;
-                case '4':
+                case '3':
                         $tt = "đã giao hàng thành công";
                         break;
 
@@ -125,4 +147,10 @@ function get_pttt($t)
                         break;
         }
         return $pt;
+}
+
+function update_bill($status, $id)
+{
+    $sql = "UPDATE bill SET bill_status = '" . $status . "' WHERE id = " . $id;
+    pdo_execute($sql);
 }

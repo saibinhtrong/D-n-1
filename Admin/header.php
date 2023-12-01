@@ -70,6 +70,12 @@
                     <span class="app-menu__label">Comment</span>
                 </a>
             </li>
+            <li>
+                <a class="app-menu__item" href="index.php?act=listbill">
+                <i class='app-menu__icon bx bx-detail'></i>
+                    <span class="app-menu__label">Danh sách đơn hàng</span>
+                </a>
+            </li>
             <br>
             <br>
             <li>

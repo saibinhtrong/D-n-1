@@ -3,31 +3,20 @@
         <i class="fa-solid fa-angles-right"></i> Đăng Nhập
     </div>
     <form action="index.php?act=login" method="post">
+
         <div class="register">
-            <div class="imagest">
-                <a href="index.php?act=register">
-                </a>
-            </div>
-            <div class="row">
-                <div class="form-group">
-                    <div class="group">
-                        <label>Tài khoản</label>
-                    </div>
-                    <input class="form-control" name="username" type="text" placeholder=" Vui lòng nhập tài khoản">
-                </div>
-                <div class="form-group">
-                    <div class="group">
-                        <label>Mật khẩu</label>
-                    </div>
-                    <input class="form-control" name="password" type="password" placeholder=" Vui lòng nhập mật khẩu">
-                </div>
-                <div class="kt">
-                    <input type="submit" name="login" value=" Đăng Nhập">
-                </div>
-                <div class="sp">
-                    Bạn chưa có tài khoản?<a href="index.php?act=register"> Đăng Ký</a>
+            <div class="login-page">
+                <div class="form-login">
+                    <form class="login-form">
+                        <input type="text" name="username" placeholder="username" />
+                        <input type="password" name="password" placeholder="password" />
+                        <input type="submit" class="btn_login" name="login" value=" Đăng Nhập">
+                        <p class="message">Not registered? <a href="index.php?act=register">Create an account</a></p>
+                        <p class="message"><a href="#">Quên mật khẩu?</a></p>
+                    </form>
                 </div>
             </div>
+           
             <div class="thongbao">
                 <h2>
                     <?php
