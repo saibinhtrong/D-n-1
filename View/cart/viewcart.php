@@ -46,24 +46,7 @@
 
                         </tr> ';
                                         ?>
-                                        <!-- <tr>
-                                        <td>1</td>
-                                        <td class="image-cart"><img src="images/1.jpg" alt=""></td>
-                                        <td>Đồng hồ</td>
-                                        <td>10</td>
-                                        <td>1</td>
-                                        <td>
-                                                <div class="total">10</div>
-                                        </td>
-                                </tr> -->
-
-                                        <!-- <tr>
-                                        <th colspan="5">Tổng đơn hàng</th>
-                                        <th>
-                                                <div class="th-total">10</div>
-                                        </th>
-
-                                </tr> -->
+                                        
                                 </table>
                         </div>
                         <div class="button-cart">

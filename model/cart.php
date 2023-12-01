@@ -66,7 +66,7 @@ function loadone_bill($id)
         $bill = pdo_query_one($sql);
         return $bill;
 }
-function loadall_bill($kyw=0,$iduser=0)
+function loadall_bill_admin($kyw=0,$iduser=0)
 {
         $sql = "SELECT * FROM bill WHERE 1" ;
         if($iduser>0) $sql.=" AND iduser=" . $iduser;
@@ -75,6 +75,16 @@ function loadall_bill($kyw=0,$iduser=0)
         $listbill = pdo_query($sql);
         return $listbill;
 }
+function loadall_bill($iduser=0)
+{
+        $sql = "SELECT * FROM bill WHERE 1" ;
+        if($iduser>0) $sql.=" AND iduser=" . $iduser;
+     
+        $sql.=" order by id desc";
+        $listbill = pdo_query($sql);
+        return $listbill;
+}
+
 
 function loadall_cart($idbill)
 {
