@@ -29,7 +29,7 @@
                     <?php
                     echo '  
                     <form action="index.php?act=addtocart" method="post" class="cart">
-                        <input type="submit" name="addtocart" value="them" class="giohang"><i class="fa-solid fa-cart-arrow-down"></i>
+                       class="giohang"><i class="fa-solid fa-cart-arrow-down"></i>
                         <input type="hidden" name="id" value="' . $ID . '">
                         <input type="hidden" name="name" value="' . $Name . '">
                         <input type="hidden" name="image" value="' . $images . '">
