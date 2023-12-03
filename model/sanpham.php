@@ -9,6 +9,7 @@ function deleta_sanpham($ID)
 {
     $sql = "DELETE FROM tb_sanpham WHERE ID =" . $ID;
     pdo_execute($sql);
+    
 }
 
 function loadAll_sanpham_top()
