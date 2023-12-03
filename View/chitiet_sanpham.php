@@ -28,7 +28,7 @@
                     <button>Mua ngay</button>
                     <?php
                     echo '  
-                    <form action="index.php?act=addtocart" method="post" >
+                    <form action="index.php?act=addtocart" method="post" class="cart">
                         <input type="hidden" name="id" value="' . $ID . '">
                         <input type="hidden" name="name" value="' . $Name . '">
                         <input type="hidden" name="image" value="' . $images . '">
