@@ -13,7 +13,6 @@
                         echo ' <img src="' . $images . '">';
                         ?>
                     </div>
-
                     <div class="contư">
                         <?php echo $Mota ?>
                     </div>
@@ -22,13 +21,12 @@
                     <div class="phienban">
                         <p> $ <?php echo $Price ?></p>
                     </div>
-                  
                 </div>
                 <div class="pay">
                     <button>Mua ngay</button>
                     <?php
                     echo '  
-                    <form action="index.php?act=addtocart" method="post" class="cart">
+                    <form action="index.php?act=addtocart" method="post" >
                         <input type="hidden" name="id" value="' . $ID . '">
                         <input type="hidden" name="name" value="' . $Name . '">
                         <input type="hidden" name="image" value="' . $images . '">

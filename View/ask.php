@@ -8,13 +8,10 @@
                 <form>
                     <label for="name">Tên của bạn:</label>
                     <input type="text" id="name" name="name" required>
-
                     <label for="email">Email của bạn:</label>
                     <input type="email" id="email" name="email" required>
-
                     <label for="question">Câu hỏi của bạn:</label>
                     <textarea id="question" name="question" required></textarea>
-
                     <button type="submit">Gửi câu hỏi</button>
                 </form>
             </div>
