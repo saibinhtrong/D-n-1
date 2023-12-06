@@ -13,7 +13,6 @@
                         echo ' <img src="' . $images . '">';
                         ?>
                     </div>
-
                     <div class="contư">
                         <?php echo $Mota ?>
                     </div>
@@ -22,31 +21,27 @@
                     <div class="phienban">
                         <p> $ <?php echo $Price ?></p>
                     </div>
-                  
                 </div>
                 <div class="pay">
                     <button>Mua ngay</button>
                     <?php
                     echo '  
-                    <form action="index.php?act=addtocart" method="post" class="cart">
-                       class="giohang"><i class="fa-solid fa-cart-arrow-down"></i>
+                    <form action="index.php?act=addtocart" method="post" >
                         <input type="hidden" name="id" value="' . $ID . '">
                         <input type="hidden" name="name" value="' . $Name . '">
                         <input type="hidden" name="image" value="' . $images . '">
                         <input type="hidden" name="price" value="' . $Price. '">
-                      <input type="submit" name="addtocart" value="Thêm">
+                        <input type="submit" class="cart" name="addtocart" value="Thêm">
                     </form>';
-
-                  
-
                     ?>
-                </div>
-                <div class="tragop">
+                    <div class="tragop">
                     <button>Trả góp 0%</button>
                 </div>
                 <div class="timhieu">
                     <button>Thông số kỹ thuật</button>
                 </div>
+                </div>
+                
             </div>
         </div>
         <div class="row ">

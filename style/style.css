@@ -1100,23 +1100,22 @@ textarea {
 }
 
 .pay .cart {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;
-    color: #ffffff;
-    border: 2px solid red;
-    width: 60px;
-    float: right;
-    height: 50px;
-    padding: 0;
+    display: block;
+    position: absolute;
+    right: 0;
+    line-height: 0px;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-weight: bold;
+    margin-right: 704px;
+    margin-top: 80px;
+    background-color: red;
+    padding: 10px;
     border-radius: 15px;
-    margin-top: 20px;
-    margin-right: 15px;
-    cursor: pointer;
-    font-size: 20px;
-    position: relative;
-    padding-left: 30px;
+    border: 1px solid red;
+    width: 65px;
+    height: 50px;
 }
 
 .cart i {
@@ -1126,7 +1125,7 @@ textarea {
     transform: translateY(-50%);
 }
 
-.cart i giohang {
+.cart i {
     width: 59px;
     height: 49px;
     border: 1px solid red;
@@ -1185,9 +1184,9 @@ textarea {
     text-align: center;
     color: #fff;
     font-weight: bold;
-    background-color: rgb(255, 157, 0);
+    background-color: rgb(255, 179, 0);
     border: 1px solid rgb(255, 179, 0);
-    width: 328px;
+    width: 250px;
     float: right;
     height: 40px;
     padding: 10px;

@@ -129,7 +129,7 @@ if (isset($_SESSION['username']) && isset($_SESSION['username']['ID'])) {
             $noidung = $_POST['msg'];
             $idpro = $_POST['idpro'];
             $iduser=$_SESSION['username']['ID'];
-            $date = date('h:i:sa d/m/Y');
+            $date = date('m/d/Y');
             inser_comment($noidung, $iduser, $idpro, $date);
             header("location: " . $_SERVER['HTTP_REFERER']);
         }
