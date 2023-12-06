@@ -45,7 +45,7 @@
                                     <td><input type="checkbox" name="" id=""></td>
                                     <td>' . $ID . '</td>
                                     <td>' . $Name . '</td>
-                                    <td>' . $Price . '</td>
+                                    <td>$' . $Price . '</td>
                                     <td>' . $hinh . '</td>
                                     <td>' . $Mota . '</td>
                                     <td>

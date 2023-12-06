@@ -38,7 +38,7 @@
                                     <td>' . $bill['id'] . '</td>
                                     <td>'.$kh.'</td>
                                     <td>' . $count . '</td>
-                                    <td>' . $bill['tongdonhang']  . '</td>
+                                    <td>$' . $bill['tongdonhang']  . '</td>
                                     <td>' . $bill['ngaydathang']  . '</td>
                                     <td>' . $ttdh . '</td>
                                     <td>
