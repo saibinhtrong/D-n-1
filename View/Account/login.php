@@ -16,11 +16,10 @@
                     </form>
                 </div>
             </div>
-           
             <div class="thongbao">
                 <h2>
                     <?php
-                    if (isset($Thongbao) && ($Thongbao != ""))
+                    if (isset($Thongbao) && ($Thongbao != " "))
                         echo $Thongbao;
                     ?>
                 </h2>

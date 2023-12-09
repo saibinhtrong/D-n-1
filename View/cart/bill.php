@@ -43,11 +43,9 @@
                                 <div class="row boxcontent">
                                         <table>
                                                 <tr class="pttt">
-                                                        <td><input type="radio" value="1" name="pttt" checked>Trả tiền sau khi nhận hàng</td>
-                                                        <td><input type="radio" value="2" name="pttt">chuyển khoản ngân hàng</td>
-                                                        <td><input type="radio" value="3" name="pttt">thanh toán online</td>
-
- 
+                                                        <td class="pttt1"><input type="radio" value="1" name="pttt" checked>Trả tiền sau khi nhận hàng</td>
+                                                        <td class="pttt2"><input type="radio" value="2" name="pttt">chuyển khoản ngân hàng</td>
+                                                        <td class="pttt3"><input type="radio" value="3" name="pttt">thanh toán online</td>
                                                 </tr>
                                         </table>
                                 </div>

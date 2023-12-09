@@ -1463,7 +1463,15 @@ textarea {
 td {
     border: 1px solid #dee2e6;
     text-align: center;
-   
+}
+
+.cart-table tr,
+td.pttt1 {
+    background-color: #6c7ae0;
+    color: #fff;
+    border: 1px solid #007BFF;
+    border-radius: 15px;
+    padding: 15px;
 }
 
 .total {
@@ -1666,6 +1674,4 @@ span.price {
 .form-login .register-form {
     display: none;
 }
-
-
 /* css table */

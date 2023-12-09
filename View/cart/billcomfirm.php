@@ -37,14 +37,13 @@
                                                         <i class="fa fa-cc-discover" style="color:orange;"></i>
                                                 </div>
                                                 <label for="cname">Phương Thức Thanh toán</label>
-                                                <input type="text" id="cname" name="pttt" value="<?= $ht_pttt ?>">
+                                                <input type="text" id="cname" readonly value="<?= $ht_pttt ?>">
                                                 <label for="cname">Mã đơn hàng</label>
-                                                <input type="text" id="cname" name="id" value="<?=$bill['id']?>">
+                                                <input type="text" id="cname" readonly value="<?=$bill['id']?>">
                                                 <label for="ccnum">Ngày đặt hàng</label>
-                                                <input type="text" id="ccnum" name="ngaydathang" value="<?=$bill['ngaydathang']?>">
+                                                <input type="text" id="ccnum" readonly value="<?=$bill['ngaydathang']?>">
                                                 <label for="ccnum">Tổng đơn hàng</label>
-                                                <input type="text" id="ccnum" name="tongdonhang" value="$<?=$bill['tongdonhang']?>">
-
+                                                <input type="text" id="ccnum" readonly value="$<?=$bill['tongdonhang']?>">
                                         </div>
                                         <div class="row mb">
                                                 <h1 class="cart-title">Sản Phẩm Đã Chọn</h1>
