@@ -1473,6 +1473,23 @@ td.pttt1 {
     border-radius: 15px;
     padding: 15px;
 }
+.cart-table tr,
+td.pttt2 {
+    background-color: #6c7ae0;
+    color: #fff;
+    border: 1px solid #007BFF;
+    border-radius: 15px;
+    padding: 15px;
+}
+.cart-table tr,
+td.pttt3 {
+    background-color: #6c7ae0;
+    color: #fff;
+    border: 1px solid #007BFF;
+    border-radius: 15px;
+    padding: 15px;
+}
+
 
 .total {
     width: calc(100% - 20px);
