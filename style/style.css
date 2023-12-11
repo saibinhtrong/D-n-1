@@ -752,6 +752,9 @@ header {
 .group {
     margin-top: 10px;
 }
+.group label{
+    margin-top: 50px;
+}
 
 .thongbao h2 {
     font-size: 14px;
@@ -872,6 +875,7 @@ header {
 .conts h4 {
     text-align: center;
     font-size: 17px;
+    margin-top: 10px;
 }
 
 
