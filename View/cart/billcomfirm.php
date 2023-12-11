@@ -46,7 +46,7 @@
                                                 <input type="text" id="ccnum" readonly value="$<?=$bill['tongdonhang']?>">
                                         </div>
                                         <div class="row mb">
-                                                <h1 class="cart-title">Sản Phẩm Đã Chọn</h1>
+                                                <h1 class="cart-title">Sản Phẩm</h1>
                                                 <table class="cart-table">
                                                         <tr>
 
