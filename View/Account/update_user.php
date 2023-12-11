@@ -24,10 +24,7 @@
             <i class="fa-solid fa-recycle"></i>
             <li> <a href="index.php?act=update_user">Cập Nhật Thông Tin</a></li>
         </div>
-        <div class="child">
-            <i class="fa-solid fa-recycle"></i>
-            <li> <a href="index.php?act=forgot">Quên mật khẩu</a></li>
-        </div>
+       
         <div class="child">
             <i class="fa-solid fa-right-from-bracket"></i>
             <li><a href="index.php?act=logout">Thoát tài khoản</a></li>

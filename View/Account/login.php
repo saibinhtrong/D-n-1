@@ -12,7 +12,7 @@
                         <input type="password" name="password" placeholder="password" />
                         <input type="submit" class="btn_login" name="login" value=" Đăng Nhập">
                         <p class="message">Not registered? <a href="index.php?act=register">Create an account</a></p>
-                        <p class="message"><a href="#">Quên mật khẩu?</a></p>
+                        <p class="message"><a href="index.php?act=forgot">Quên mật khẩu?</a></p>
                     </form>
                 </div>
             </div>

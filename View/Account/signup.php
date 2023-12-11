@@ -8,30 +8,21 @@
                 <a href="index.php?act=home">
                 </a>
             </div>
+
             <div class="row">
-                <div class="form-group">
-                    <div class="group">
-                        <label>Email</label>
+                <div class="register">
+                    <div class="login-page">
+                        <div class="form-login">
+                            <form class="login-form">
+                                <input type="text" name="email" placeholder="Vui lòng nhập email" />
+                                <input type="username" name="username" placeholder="Vui lòng nhập tên tài khoản" />
+                                <input type="password" name="password" placeholder="Vui lòng nhập password" />
+                                <input type="submit" class="btn_login" name="dangky" value=" Đăng Ký">
+                                <p class="message">Already have an account? <a href="index.php?act=login">Account login</a></p>
+                                <p class="message"><a href="index.php?act=forgot">Quên mật khẩu?</a></p>
+                            </form>
+                        </div>
                     </div>
-                    <input class="form-control" name="email" type="text" placeholder=" Vui lòng nhập Email">
-                </div>
-                <div class="form-group">
-                    <div class="group">
-                        <label>Tài khoản</label>
-                    </div>
-                    <input class="form-control" name="username" type="text" placeholder=" Vui lòng nhập tài khoản">
-                </div>
-                <div class="form-group">
-                    <div class="group">
-                        <label>Mật khẩu</label>
-                    </div>
-                    <input class="form-control" name="password" type="password" placeholder=" Vui lòng nhập mật khẩu">
-                </div>
-                <div class="kt">
-                    <input type="submit" name="dangky" value=" Đăng Ký">
-                </div>
-                <div class="sp">
-                    <a href="index.php?act=login"> Đăng Nhập</a>
                 </div>
             </div>
             <div class="thongbao">
