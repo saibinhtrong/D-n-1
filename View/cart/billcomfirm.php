@@ -15,15 +15,15 @@
                                             
                                                 <label for="fname"><i class="fa fa-user"></i> Full
                                                         Name</label>
-                                                <input type="text" id="fname" readonly value="Name" value="<?=$bill['bill_name']?>">
+                                                <input type="text" id="fname" name="Name" readonly value="<?=$bill['bill_name']?>">
                                                 <label for="Email"><i class="fa fa-envelope"></i>
                                                         Email</label>
-                                                <input type="text" id="Email" readonly value="Email" value="<?=$bill['bill_email']?>">
+                                                <input type="text" id="Email" name="Email" readonly value="<?=$bill['bill_email']?>">
                                                 <label for="adr"><i class="fa fa-address-card-o"></i>
                                                         Address</label>
-                                                <input type="text" id="adr" readonly value="Address" value="<?=$bill['bill_address']?>">
+                                                <input type="text" id="adr" name="Address" readonly value="<?=$bill['bill_address']?>">
                                                 <label for="Tel">Tel</label>
-                                                <input type="text" id="city" readonly value="Tel" value="<?=$bill['bill_tel']?>">
+                                                <input type="text" id="city" name="Tel" readonly value="<?=$bill['bill_tel']?>">
 
                                         </div>
 
