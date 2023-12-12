@@ -39,7 +39,7 @@
                     </div>
                       </a>
                     <a href="' . $link_sp . '"></a> <h3>' . $Name . '</h3></a>
-                    <p> ' . $Price . 'đ <del>20.959.000đ</del></p>
+                    <p> $' . $Price . '<del>$20000</del></p>
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
