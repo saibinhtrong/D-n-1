@@ -15,15 +15,15 @@
                                             
                                                 <label for="fname"><i class="fa fa-user"></i> Full
                                                         Name</label>
-                                                <input type="text" id="fname" name="Name" value="<?=$bill['bill_name']?>">
+                                                <input type="text" id="fname" name="Name" readonly value="<?=$bill['bill_name']?>">
                                                 <label for="Email"><i class="fa fa-envelope"></i>
                                                         Email</label>
-                                                <input type="text" id="Email" name="Email" value="<?=$bill['bill_email']?>">
+                                                <input type="text" id="Email" name="Email" readonly value="<?=$bill['bill_email']?>">
                                                 <label for="adr"><i class="fa fa-address-card-o"></i>
                                                         Address</label>
-                                                <input type="text" id="adr" name="Address" value="<?=$bill['bill_address']?>">
+                                                <input type="text" id="adr" name="Address" readonly value="<?=$bill['bill_address']?>">
                                                 <label for="Tel">Tel</label>
-                                                <input type="text" id="city" name="Tel" value="<?=$bill['bill_tel']?>">
+                                                <input type="text" id="city" name="Tel" readonly value="<?=$bill['bill_tel']?>">
 
                                         </div>
 
@@ -46,7 +46,7 @@
                                                 <input type="text" id="ccnum" readonly value="$<?=$bill['tongdonhang']?>">
                                         </div>
                                         <div class="row mb">
-                                                <h1 class="cart-title">Sản Phẩm Đã Chọn</h1>
+                                                <h1 class="cart-title">Sản Phẩm</h1>
                                                 <table class="cart-table">
                                                         <tr>
 
